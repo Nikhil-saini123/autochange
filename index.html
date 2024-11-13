@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winning Candidate Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Winning Candidate Details</h1>
+    </header>
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="window.history.back()">Back</button>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Candidate Details Box -->
+        <div class="details-box">
+            <h2 id="heading">Details about current winning candidate</h2>
+        </div>
+
+        <!-- Candidate Photo and Info -->
+        <div class="candidate-info" >
+            <div class="photo-box" style="height: 240px; width: 240px;"><img src="" id="img1" height="240px" width="240px"></div>
+            <div class="info-box">
+                <span class="name" id="name">Name</span>
+                <span class="party" id="party">Party</span>
+            </div>
+        </div>
+
+      <!-- Voting Details -->
+        <div class="voting-history">
+            <button id="old"><p>2013-14</p></button>
+            <button id="mid"><p>2018-19</p></button>
+            <button id="new"><p>2023-24</p></button>
+        </div>
+
+        <!-- Party Votes Table -->
+        <div class="party-votes">
+            <table>
+                <thead>
+                    <tr>
+                        <th>INC</th>
+                        <th>BJP</th>
+                        <th>Others</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><p id="inc">Votes</p></td>
+                        <td><p id="bjp">Votes</p></td>
+                        <td><p id="other">Votes</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><p id="total">Total Votes</p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Election Details</p>
+    </footer>
+<script type="text/javascript"src="j2.js"></script>
+</body>
+</html>
